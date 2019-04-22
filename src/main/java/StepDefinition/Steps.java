@@ -20,7 +20,8 @@ public class Steps {
         driver.get("http://demo.guru99.com/v4");
     }
     
-    @When("^Enter the Username \"(.*)\" and Password \"(.*)\"$")
+    //@When("^Enter the Username \"(.*)\" and Password \"(.*)\"$")
+    @When("^Enter the Username (.*)and Password (.*)$")
     public void enter_the_Username_and_Password(String username, String password) throws Throwable {
         System.out.println("This step enter the Username and Password on the login page.");
         driver.findElement(By.name("uid")).sendKeys(username);
