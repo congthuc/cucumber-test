@@ -14,7 +14,7 @@ public class Steps {
     @Given("^Open the Firefox and launch the application$")
     public void open_the_Firefox_and_launch_the_application() throws Throwable {
         System.out.println("This Step open the Firefox and launch the application.");
-        System.setProperty("webdriver.gecko.driver", "/Users/Guest/Downloads/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/Users/thucphan/Downloads/geckodriver");
         driver= new FirefoxDriver();
         //driver.manage().window().maximize();
         driver.get("http://demo.guru99.com/v4");
